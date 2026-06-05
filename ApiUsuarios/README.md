@@ -125,7 +125,7 @@ Debes incluir el header: `Authorization: Bearer {token}`
   "nombre": "Luis Hernández",
   "correo": "luis@correo.com",
   "fechaDeNacimiento": "2000-01-15T00:00:00",
-  "password": "miPassword123"
+  "password": "admin123"
 }
 ```
 
