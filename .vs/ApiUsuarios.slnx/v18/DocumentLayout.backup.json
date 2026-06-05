@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|c:\\users\\luish\\onedrive\\escritorio\\backendlearn\\apiusuarios\\apiusuarios\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|solutionrelative:apiusuarios\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|c:\\users\\luish\\onedrive\\escritorio\\backendlearn\\apiusuarios\\apiusuarios\\apiusuarios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|solutionrelative:apiusuarios\\apiusuarios.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|c:\\users\\luish\\onedrive\\escritorio\\backendlearn\\apiusuarios\\apiusuarios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|solutionrelative:apiusuarios\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|c:\\users\\luish\\onedrive\\escritorio\\backendlearn\\apiusuarios\\apiusuarios\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|solutionrelative:apiusuarios\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|c:\\users\\luish\\onedrive\\escritorio\\backendlearn\\apiusuarios\\apiusuarios\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|solutionrelative:apiusuarios\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|c:\\users\\luish\\onedrive\\escritorio\\backendlearn\\apiusuarios\\apiusuarios\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|solutionrelative:apiusuarios\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|c:\\users\\luish\\onedrive\\escritorio\\backendlearn\\apiusuarios\\apiusuarios\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83BF56D9-B10A-43D6-B926-8BC9956118E3}|ApiUsuarios\\ApiUsuarios.csproj|solutionrelative:apiusuarios\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApiUsuarios\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,87 +24,9 @@
               "RelativeDocumentMoniker": "ApiUsuarios\\README.md",
               "ToolTip": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\README.md",
               "RelativeToolTip": "ApiUsuarios\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2026-05-30T01:34:14.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\appsettings.json",
-              "RelativeDocumentMoniker": "ApiUsuarios\\appsettings.json",
-              "ToolTip": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\appsettings.json",
-              "RelativeToolTip": "ApiUsuarios\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-30T00:34:38.85Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "ApiUsuarios\\Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "ApiUsuarios\\Controllers\\UsuariosController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAUwGcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T00:37:09.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Program.cs",
-              "RelativeDocumentMoniker": "ApiUsuarios\\Program.cs",
-              "ToolTip": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Program.cs",
-              "RelativeToolTip": "ApiUsuarios\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAowBgAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T00:35:56.974Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApiUsuarios",
-              "DocumentMoniker": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\ApiUsuarios.csproj",
-              "RelativeDocumentMoniker": "ApiUsuarios\\ApiUsuarios.csproj",
-              "ToolTip": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\ApiUsuarios.csproj",
-              "RelativeToolTip": "ApiUsuarios\\ApiUsuarios.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-05-30T00:16:47.97Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "ApiUsuarios\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "ApiUsuarios\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T00:18:27.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "ApiUsuarios\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Models\\Usuario.cs",
-              "RelativeToolTip": "ApiUsuarios\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T00:17:41.601Z",
               "EditorCaption": ""
             }
           ]

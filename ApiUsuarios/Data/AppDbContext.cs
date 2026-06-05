@@ -1,6 +1,5 @@
 ﻿using ApiUsuarios.Models;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
 
 namespace ApiUsuarios.Data
 {
@@ -16,6 +15,10 @@ namespace ApiUsuarios.Data
         {
             modelBuilder.Entity<Usuario>()
                 .HasIndex(u => u.Correo)
+                .IsUnique();
+
+            modelBuilder.Entity<Usuario>()
+                .HasIndex(u => u.NombreUsuario)
                 .IsUnique();
 
             base.OnModelCreating(modelBuilder);

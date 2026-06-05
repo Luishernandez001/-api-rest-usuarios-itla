@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ApiUsuarios.Data;
 using ApiUsuarios.Models;
+using ApiUsuarios.Services;
 
 namespace ApiUsuarios.Controllers
 {
+    [Authorize]
     [Route("api/usuarios")]
     [ApiController]
     public class UsuariosController : ControllerBase
@@ -45,9 +48,15 @@ namespace ApiUsuarios.Controllers
                 .AnyAsync(u => u.Correo == usuario.Correo);
 
             if (existeCorreo)
-            {
                 return BadRequest(new { mensaje = "El correo electrónico ya está en uso." });
-            }
+
+            var existeNombreUsuario = await _context.Usuarios
+                .AnyAsync(u => u.NombreUsuario == usuario.NombreUsuario);
+
+            if (existeNombreUsuario)
+                return BadRequest(new { mensaje = "El nombre de usuario ya está en uso." });
+
+            usuario.Password = TokenService.HashPassword(usuario.Password);
 
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
@@ -60,23 +69,29 @@ namespace ApiUsuarios.Controllers
         public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
         {
             if (id != usuario.Id)
-            {
                 return BadRequest(new { mensaje = "El ID de la URL no coincide con el ID del usuario." });
-            }
+
+            var usuarioExistente = await _context.Usuarios.AsNoTracking()
+                .FirstOrDefaultAsync(u => u.Id == id);
+
+            if (usuarioExistente == null)
+                return NotFound(new { mensaje = "Usuario no encontrado." });
 
             var existeOtroCorreo = await _context.Usuarios
                 .AnyAsync(u => u.Correo == usuario.Correo && u.Id != id);
 
             if (existeOtroCorreo)
-            {
                 return BadRequest(new { mensaje = "El correo electrónico ya está en uso por otro usuario." });
-            }
 
-            var usuarioExiste = await _context.Usuarios.AnyAsync(u => u.Id == id);
-            if (!usuarioExiste)
-            {
-                return NotFound(new { mensaje = "Usuario no encontrado." });
-            }
+            var existeOtroNombreUsuario = await _context.Usuarios
+                .AnyAsync(u => u.NombreUsuario == usuario.NombreUsuario && u.Id != id);
+
+            if (existeOtroNombreUsuario)
+                return BadRequest(new { mensaje = "El nombre de usuario ya está en uso por otro usuario." });
+
+            usuario.Password = string.IsNullOrWhiteSpace(usuario.Password)
+                ? usuarioExistente.Password
+                : TokenService.HashPassword(usuario.Password);
 
             _context.Entry(usuario).State = EntityState.Modified;
             await _context.SaveChangesAsync();
