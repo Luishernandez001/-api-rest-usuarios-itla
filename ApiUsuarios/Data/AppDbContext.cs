@@ -10,6 +10,9 @@ namespace ApiUsuarios.Data
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+        public DbSet<Proveedor> Proveedores { get; set; }
+        public DbSet<Producto> Productos { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -20,6 +23,18 @@ namespace ApiUsuarios.Data
             modelBuilder.Entity<Usuario>()
                 .HasIndex(u => u.NombreUsuario)
                 .IsUnique();
+
+            modelBuilder.Entity<Producto>()
+                .HasOne(p => p.Categoria)
+                .WithMany(c => c.Productos)
+                .HasForeignKey(p => p.IdCategoria)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Producto>()
+                .HasOne(p => p.Proveedor)
+                .WithMany(pr => pr.Productos)
+                .HasForeignKey(p => p.IdProveedor)
+                .OnDelete(DeleteBehavior.Restrict);
 
             base.OnModelCreating(modelBuilder);
         }

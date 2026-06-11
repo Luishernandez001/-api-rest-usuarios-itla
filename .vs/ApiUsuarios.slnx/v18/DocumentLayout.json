@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApiUsuarios\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ApiUsuarios\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
@@ -14,11 +18,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Program.cs",
+              "RelativeDocumentMoniker": "ApiUsuarios\\Program.cs",
+              "ToolTip": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\Program.cs",
+              "RelativeToolTip": "ApiUsuarios\\Program.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAArwE4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T20:01:56.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\luish\\OneDrive\\Escritorio\\backendlearn\\ApiUsuarios\\ApiUsuarios\\README.md",
               "RelativeDocumentMoniker": "ApiUsuarios\\README.md",

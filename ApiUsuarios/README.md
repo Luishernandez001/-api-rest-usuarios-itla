@@ -1,6 +1,6 @@
-﻿# ApiUsuarios — Práctica 6: Autenticación JWT
+﻿# ApiUsuarios — Práctica 7: Code First + Agregaciones
 
-API REST en ASP.NET Core 8 con autenticación mediante JSON Web Tokens (JWT).
+API REST en ASP.NET Core 8 con autenticación JWT, modelo extendido con Producto, Proveedor y Categoría, y endpoints de agregación.
 
 ---
 
@@ -171,3 +171,104 @@ Debes incluir el header: `Authorization: Bearer {token}`
 - Los tokens JWT están firmados con **HMAC-SHA256**.
 - El campo `Password` está marcado con `[JsonIgnore]` — nunca se expone en las respuestas de la API.
 - El middleware `UseAuthentication()` + `UseAuthorization()` protege automáticamente los endpoints marcados con `[Authorize]`.
+
+---
+
+## Nuevas entidades (Práctica 7)
+
+### Categorías 🔒
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| GET | `/api/categorias` | Lista todas las categorías |
+| GET | `/api/categorias/{id}` | Obtiene una categoría por ID |
+| POST | `/api/categorias` | Crea una nueva categoría |
+| PUT | `/api/categorias/{id}` | Actualiza una categoría |
+| DELETE | `/api/categorias/{id}` | Elimina una categoría (si no tiene productos) |
+
+**Ejemplo POST:**
+```json
+{ "id": 0, "nombre": "Electrónica" }
+```
+
+---
+
+### Proveedores 🔒
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| GET | `/api/proveedores` | Lista todos los proveedores |
+| GET | `/api/proveedores/{id}` | Obtiene un proveedor por ID |
+| POST | `/api/proveedores` | Crea un nuevo proveedor |
+| PUT | `/api/proveedores/{id}` | Actualiza un proveedor |
+| DELETE | `/api/proveedores/{id}` | Elimina un proveedor (si no tiene productos) |
+
+**Ejemplo POST:**
+```json
+{ "id": 0, "nombre": "Tech Supplies SRL", "contacto": "ventas@techsupplies.com" }
+```
+
+---
+
+### Productos 🔒
+
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| GET | `/api/productos` | Lista todos los productos (con categoría y proveedor) |
+| GET | `/api/productos/{id}` | Obtiene un producto por ID |
+| POST | `/api/productos` | Crea un nuevo producto |
+| PUT | `/api/productos/{id}` | Actualiza un producto |
+| DELETE | `/api/productos/{id}` | Elimina un producto |
+| GET | `/api/productos/estadisticas` | Precio más alto, más bajo, suma total y promedio |
+| GET | `/api/productos/categoria/{idCategoria}` | Productos de una categoría específica |
+| GET | `/api/productos/proveedor/{idProveedor}` | Productos de un proveedor específico |
+| GET | `/api/productos/total` | Cantidad total de productos registrados |
+
+**Ejemplo POST:**
+```json
+{
+  "id": 0,
+  "nombre": "Laptop HP 15",
+  "precio": 850.00,
+  "stock": 10,
+  "idProveedor": 1,
+  "idCategoria": 1
+}
+```
+
+**Ejemplo respuesta `/api/productos/estadisticas`:**
+```json
+{
+  "productoMasCaro": { "id": 2, "nombre": "MacBook Pro", "precio": 1500.00, ... },
+  "productoMasBarato": { "id": 1, "nombre": "Cable USB", "precio": 5.99, ... },
+  "sumaTotal": 2355.99,
+  "precioPromedio": 785.33
+}
+```
+
+---
+
+## Validaciones (DataAnnotations) — Nuevas entidades
+
+### Modelo `Categoria`
+
+| Campo | Validaciones |
+|-------|-------------|
+| `Nombre` | Required, MinLength(2), MaxLength(100) |
+
+### Modelo `Proveedor`
+
+| Campo | Validaciones |
+|-------|-------------|
+| `Nombre` | Required, MinLength(2), MaxLength(100) |
+| `Contacto` | Required, MaxLength(150) |
+
+### Modelo `Producto`
+
+| Campo | Validaciones |
+|-------|-------------|
+| `Nombre` | Required, MinLength(2), MaxLength(150) |
+| `Precio` | Required, Range(0.01, 999999.99) |
+| `Stock` | Required, Range(0, MaxValue) |
+| `IdProveedor` | Required — debe existir en BD |
+| `IdCategoria` | Required — debe existir en BD |
