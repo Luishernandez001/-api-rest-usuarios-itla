@@ -13,10 +13,12 @@ namespace ApiUsuarios.Controllers
     public class UsuariosController : ControllerBase
     {
         private readonly AppDbContext _context;
+        private readonly LogService _logService;
 
-        public UsuariosController(AppDbContext context)
+        public UsuariosController(AppDbContext context, LogService logService)
         {
             _context = context;
+            _logService = logService;
         }
 
         // GET: api/usuarios
@@ -61,7 +63,35 @@ namespace ApiUsuarios.Controllers
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
+            try
+            {
+                await _logService.RegistrarLogAsync(usuario);
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine($"Error al escribir el log del usuario: {ex.Message}");
+            }
+
             return CreatedAtAction(nameof(GetUsuario), new { id = usuario.Id }, usuario);
+        }
+
+        // GET: api/usuarios/logs
+        [HttpGet("logs")]
+        public async Task<ActionResult> GetLogs()
+        {
+            try
+            {
+                var logs = await _logService.ObtenerLogsAsync();
+
+                if (logs.Count == 0)
+                    return Ok(new { mensaje = "No hay registros en el historial de logs.", datos = logs });
+
+                return Ok(logs);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { mensaje = "Error al leer el archivo de logs.", detalle = ex.Message });
+            }
         }
 
         // PUT: api/usuarios/5
