@@ -1,0 +1,18 @@
+[
+  {
+    "id": 5,
+    "nombreUsuario": "mariaperez",
+    "nombre": "Maria Perez",
+    "correo": "maria@gmail.com",
+    "fechaDeNacimiento": "1995-06-19T03:16:25.354Z",
+    "fechaRegistro": "2026-06-18T23:18:23.9561234-04:00"
+  },
+  {
+    "id": 6,
+    "nombreUsuario": "carloslopez",
+    "nombre": "Carlos Lopez",
+    "correo": "carlos@gmail.com",
+    "fechaDeNacimiento": "1995-02-19T03:16:25.354Z",
+    "fechaRegistro": "2026-06-18T23:20:59.879946-04:00"
+  }
+]
